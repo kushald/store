@@ -21,6 +21,10 @@ group :assets do
   gem 'twitter-bootstrap-rails'
 
 end
+group :production do
+  # gems specifically for Heroku go here
+  gem "pg"
+end
 
 gem 'jquery-rails'
 
