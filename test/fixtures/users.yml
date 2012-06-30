@@ -1,10 +1,10 @@
 # == Schema Information
 #
-# Table name: products
+# Table name: users
 #
 #  id         :integer(4)      not null, primary key
 #  name       :string(255)
-#  price      :integer(10)
+#  email      :string(255)
 #  created_at :datetime        not null
 #  updated_at :datetime        not null
 #
@@ -13,8 +13,8 @@
 
 one:
   name: MyString
-  price: 9.99
+  email: MyString
 
 two:
   name: MyString
-  price: 9.99
+  email: MyString
