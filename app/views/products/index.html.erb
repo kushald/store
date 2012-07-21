@@ -2,37 +2,24 @@
 <div class="page-header">
   <h1><%=t '.title', :default => model_class.model_name.human.pluralize %></h1>
 </div>
-<table id="myTable" class="table table-striped table-bordered">
-  <thead>
-    <tr>
-      <th><%= model_class.human_attribute_name(:id) %></th>
-      <th><%= model_class.human_attribute_name(:name) %></th>
-      <th><%= model_class.human_attribute_name(:price) %></th>
-      <th><%= model_class.human_attribute_name(:created_at) %></th>
-      <th><%=t '.actions', :default => t("helpers.actions") %></th>
-    </tr>
-  </thead>
-  <tbody>
+<div class="container"  style="display:inline;">  
+<ul class="thumbnails"> 
     <% @products.each do |product| %>
-      <tr>
-        <td><%= link_to product.id, product_path(product) %></td>
-        <td><%= product.name %></td>
-        <td><%= product.price %></td>
-        <td><%=l product.created_at %></td>
-        <td>
-          <%= link_to t('.edit', :default => t("helpers.links.edit")),
-                      edit_product_path(product), :class => 'btn btn-mini' %>
-          <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
-                      product_path(product),
-                      :method => :delete,
-                      :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')),
-                      :class => 'btn btn-mini btn-danger' %>
-        </td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
 
-<%= link_to t('.new', :default => t("helpers.links.new")),
-            new_product_path,
-            :class => 'btn btn-primary' %>
+     
+        <li class="span3">  
+          <div class="thumbnail">  
+            <img src="<%= product.image.url(:large) %>" alt="product 1">  
+            <div class="caption">  
+              <h5><%= product.name %></h5>  
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore       magna aliqua.</p>  
+              <p><a href="#" class="btn btn-success">Buy</a> <a href="#" class="btn btn-warning">More info</a></p>  
+            </div>  
+          </div>  
+        </li>  
+      
+
+      
+    <% end %>
+    </ul>
+    </div>

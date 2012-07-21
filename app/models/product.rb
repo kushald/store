@@ -10,5 +10,12 @@
 #
 
 class Product < ActiveRecord::Base
-  attr_accessible :name, :price
+  attr_accessible :name, :price, :image
+  has_attached_file :image,
+    :styles => {
+      :thumb => "75x75#",
+      :small => "100x100#",
+      :medium => "150x150>",
+      :large => "370x280"
+    }
 end

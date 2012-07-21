@@ -10,7 +10,7 @@ gem 'mysql2'
 gem 'twitter-bootstrap-rails'
 gem 'annotate', '~> 2.4.1.beta', group: :development
 gem 'bcrypt-ruby', '3.0.1'
-
+gem 'paperclip'
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
