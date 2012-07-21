@@ -1,6 +1,5 @@
 <%- model_class = Product.new.class -%>
 <div class="page-header">
-  <h1><%=t '.title', :default => model_class.model_name.human.pluralize %></h1>
 </div>
 <div class="container"  style="display:inline;">  
 <ul class="thumbnails"> 
@@ -13,7 +12,7 @@
             <div class="caption">  
               <h5><%= product.name %></h5>  
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore       magna aliqua.</p>  
-              <p><a href="#" class="btn btn-success">Buy</a> <a href="#" class="btn btn-warning">More info</a></p>  
+              <p><a href="#" class="btn btn-success">Buy</a> <a href="#" id="example" class="btn btn-warning" rel="popover" data-content="It's so simple to create a tooltop for my website!" data-original-title="Twitter Bootstrap Popover">More info</a></p>  
             </div>  
           </div>  
         </li>  
