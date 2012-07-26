@@ -10,10 +10,29 @@
             <div class="caption">  
               <h5><%= product.name %></h5>  
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore       magna aliqua.</p>  
-              <p><a href="#" class="btn btn-success">Buy</a> <a href="#" id="example" class="btn btn-warning" rel="popover" data-content="It's so simple to create a tooltop for my website!" data-original-title="<%= product.name %>">More info</a></p>  
+              <p><a href="#" class="btn btn-success">Buy</a> <a class="btn btn-warning" data-toggle="modal" href="#myModal_<%= product.id %>" >More info</a></p>  
             </div>  
           </div>  
         </li>
+
+        <div class="modal hide" id="myModal_<%= product.id %>">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal">×</button>
+    <h3><%= product.name %></h3>
+  </div>
+  <div class="modal-body">
+    <p>
+      Food is any substance consumed to provide nutritional support for the body. It is usually of plant or animal origin, and contains essential nutrients, such as carbohydrates, fats, proteins, vitamins, or minerals. The substance is ingested by an organism and assimilated by the organism's cells in an effort to produce energy, maintain life, or stimulate growth.
+Historically, people secured food through two methods: hunting and gathering, and agriculture. Today, most of the food energy consumed by the world population is supplied by the food industry.
+Food safety and food security are monitored by agencies like the International Association for Food Protection, World Resources Institute, World Food Programme, Food and Agriculture Organization, and International Food Information Council. They address issues such as sustainability, biological diversity, climate change, nutritional economics, population growth, water supply, and access to food.
+The right to food is a human right derived from the International Covenant on Economic, Social and Cultural Rights (ICESCR), recognizing the "right to an adequate standard of living, including adequate food", as well as the "fundamental right to be free from hunger".
+    </p>
+  </div>
+  <div class="modal-footer">
+    <a href="#" class="btn btn-primary" data-dismiss="modal">Close</a>
+  </div>
+</div>
+
     <% end %>
     </ul>
     </div>
