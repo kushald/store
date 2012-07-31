@@ -11,6 +11,11 @@ Store::Application.routes.draw do
   match '/signup',  to: 'users#new'
   match '/signin',  to: 'sessions#new'
   match '/signout', to: 'sessions#destroy', via: :delete
+  match '/modal' => "products#modal"
+  
+  # Cart Routes
+  match '/carts' => 'carts#index'
+  match '/carts/insert-into-cart' => 'carts#insert_into_cart', :via => :post
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

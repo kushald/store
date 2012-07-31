@@ -3,11 +3,7 @@ class ProductsController < ApplicationController
   # GET /products.json
   def index
     @products = Product.all
-
-    respond_to do |format|
-      format.html # index.html.erb
-      format.json { render json: @products }
-    end
+    render :template => "/products/mobile_index" if params[:m].present?
   end
 
   # GET /products/1
@@ -79,5 +75,8 @@ class ProductsController < ApplicationController
       format.html { redirect_to products_url }
       format.json { head :no_content }
     end
+  end
+
+  def modal
   end
 end

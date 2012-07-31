@@ -1,24 +1,7 @@
-<%- model_class = Product.new.class -%>
-<div class="page-header">
-</div>
-<div class="container"  style="display:inline;">  
-<ul class="thumbnails"> 
-    <% @products.each do |product| %>
-        <li class="span3">  
-          <div class="thumbnail">  
-            <img src="http://dl.dropbox.com/u/14805214/<%= product.name %>.jpg" alt="product">  
-            <div class="caption">  
-              <h5><%= product.name %></h5>  
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore       magna aliqua.</p>  
-              <p><a href="#" class="btn btn-success buy" id="<%= product.id %>">Buy</a> <a class="btn btn-warning" data-toggle="modal" href="#myModal_<%= product.id %>" >More info</a></p>  
-            </div>  
-          </div>  
-        </li>
-
-        <div class="modal hide" id="myModal_<%= product.id %>">
+<div class="modal hide" id="myModal">
   <div class="modal-header">
     <button type="button" class="close" data-dismiss="modal">×</button>
-    <h3><%= product.name %></h3>
+    <h3>aaa</h3>
   </div>
   <div class="modal-body">
     <p>
@@ -32,24 +15,3 @@ The right to food is a human right derived from the International Covenant on Ec
     <a href="#" class="btn btn-primary" data-dismiss="modal">Close</a>
   </div>
 </div>
-
-    <% end %>
-    </ul>
-    </div>
-<script type="text/javascript">
-  $(function() {
-    $(".buy").click(function(){
-      $.ajax({
-        url: "/carts/insert-into-cart",
-        type: "POST",
-        data:{
-          product_id: $(this).attr("id")
-        },
-        success:function(response){
-          alert(response.product_id);
-        }
-      });
-    
-    });
-  });
-</script>
