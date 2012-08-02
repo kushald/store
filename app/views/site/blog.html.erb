@@ -1,0 +1,9 @@
+<%#
+# To change this template, choose Tools | Templates
+# and open the template in the editor.
+%>
+
+<% @feeds.each do |feed| %>
+<h2><%= raw feed[1][:title] %></h2><br/>
+<%= raw feed[1][:description] %><br/>
+<% end %>

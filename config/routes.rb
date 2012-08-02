@@ -3,6 +3,7 @@ Store::Application.routes.draw do
 
   get "site/about_us"
   get "site/contact_us"
+  get "site/blog"
 
   resources :products
   resources :users
