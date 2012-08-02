@@ -4,6 +4,8 @@
 %>
 
 <% @feeds.each do |feed| %>
+<div class="span6">
 <h3><%= raw feed[1][:title] %></h3><br/>
 <%= raw feed[1][:description] %><br/>
+</div>
 <% end %>

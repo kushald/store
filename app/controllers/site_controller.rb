@@ -12,7 +12,7 @@ class SiteController < ApplicationController
   def blog
     @feeds = {}
     @rss = Nokogiri::XML(open("http://fudehouse.com/rss"))
-    5.times do |i|
+    8.times do |i|
       @feeds[i]= {:title => @rss.xpath("//item/title")[i].text, :description => @rss.xpath("//item/description")[i].text}
     end
   end

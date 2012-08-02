@@ -17,6 +17,7 @@ Store::Application.routes.draw do
   # Cart Routes
   match '/carts' => 'carts#index'
   match '/carts/insert-into-cart' => 'carts#insert_into_cart', :via => :post
+  match 'blog' => 'site#blog'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
