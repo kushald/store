@@ -11,7 +11,6 @@ content = Cart.item_details(:cart_id => session[:cart])
     <h5><%= content[:products][i].name %></h5>
       <td><%= text_field :quantity, :quantity, :value => 1, :class => "input-mini", :num => 1  %>&times;</td>
       <td class="item_price"><%= number_to_currency(content[:products][i].price) %></td>
-      </tr>
     </table>
     <hr />
   <% end %>
