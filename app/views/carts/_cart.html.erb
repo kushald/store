@@ -1,0 +1,30 @@
+
+<%
+
+content = Cart.item_details(:cart_id => session[:cart])
+%>
+<div class="form-actions">
+  <h1><%#=t '.title', :default => model_class.model_name.human %></h1>
+  <div class="cart_title">Your Cart</div>
+  <table>
+    <% content[:cart_items].each_with_index do |c,i| %>
+    <h5><%= content[:products][i].name %></h5>
+      <td><%= text_field :quantity, :quantity, :value => 1, :class => "input-mini", :num => 1  %>&times;</td>
+      <td class="item_price"><%= number_to_currency(content[:products][i].price) %></td>
+      </tr>
+    </table>
+    <hr />
+  <% end %>
+  <table>
+
+    <tr>
+      <td><%= button_to "Checkout","/orders",  :class=> "btn btn-success", method: :get %></td>
+      <td><%= button_to 'Empty cart',"/orders", :class=> "btn btn-danger", method: :delete, confirm: 'Are you sure?' %></td>
+      <td></td>
+
+    </tr>
+  </table>
+
+
+<%# end %>
+</div>

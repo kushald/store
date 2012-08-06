@@ -10,7 +10,9 @@
           <div class="caption">  
             <h5><%= product.name %></h5>  
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore       magna aliqua.</p>  
-            <p><a href="#" class="btn btn-success buy" id="<%= product.id %>">Buy</a> <a class="btn btn-warning" data-toggle="modal" href="#myModal_<%= product.id %>" >More info</a></p>  
+            <p> <a class="btn btn-warning" data-toggle="modal" href="#myModal_<%= product.id %>" >More info</a>
+              <%= button_to 'Add to Cart', "/carts/insert-into-cart/?product_id=#{product.id}",class: "btn btn-primary", :remote => true %>
+            </p>  
           </div>  
         </div>  
       </li>
@@ -45,11 +47,7 @@
       data:{
       product_id: $(this).attr("id")
       },
-      success:function(response){
-      alert(response.product_id);
-      }
-     });
-
-    });
+      success:function(){
+       
   });
 </script>

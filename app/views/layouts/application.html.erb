@@ -60,60 +60,24 @@
       </div>
     </div>
   </div>
-<a class="btn btn-danger" data-toggle="modal" href="#myModal2"><i class="icon-shopping-cart"></i> Cart </a>
+  <div class="container">
+<%#= render :partial => "shared/flash_messages", :locals => {:flash => flash} %>
+  <div class="row">
+    <div class="span9"><%= yield %></div>
+    <div class="span3">
+      <div class="page-header">
+</div>
+<div id="cart" >
+<% if @cart %>
 
 
+<%= render @cart %>
 
-
-
-
-<% if true %>
-<div id="myModal2" class="modal hide">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal">×</button>
-            <h3>Your Cart:</h3>
-          </div>
-          <div class="modal-body">
-            <% 10.times do %>
-            <div class="row">
-  <div class="span"><img alt="254" class="thumbnail" src="http://s3.amazonaws.com/dailythreads/254.jpg"></div>
-  <div class="span1"><h6>Aj Morgan Hey Ya Sunglasses <br><div>
-    
-    <div style="margin-top:6px;">
-      <span style="margin-top:10px;" class="badge badge-inverse">3</span>
+<% end %>
+</div>
     </div>
   </div>
-</h6></div>
-  <div class="span1 item_price">$38.97
-    <br>
-    <br>
-    &nbsp;
-  <a href="/line_items?product_id=254" data-method="post" data-remote="true" rel="nofollow" style="margin-top:8px;">
-      <i class="icon-plus-sign icon-white"></i>
-</a>    <br>
-    &nbsp;
-    <a href="/line_items/decrement?id=277" data-method="post" data-remote="true" rel="nofollow">
-      <i class="icon-minus-sign icon-white"></i>
-</a>    </div>
 </div>
-<% end %>
-          </div>
-          <div class="modal-footer">
-              <a href="#" class="btn pull-left" data-dismiss="modal">Close</a>
-            <a class="btn-mini btn" data-dismiss="modal" data-method="delete" data-remote="true" data-toggle="modal" href="#myModal" rel="nofollow">
-              <i class="icon-remove icon-white">
-</i>              Delete
-</a>          </div>
-       </div>
-<% end %>
-
-
-
-
-
-  <div class="container-fluid">
-    <%= yield %>
-  </div>
 </body>
 </html>
 
