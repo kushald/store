@@ -4,6 +4,7 @@ class ApplicationController < ActionController::Base
   include SessionsHelper
   before_filter :current_user
   before_filter :cart_setting
+  before_filter :check_request
   
   private
   def current_cart
@@ -22,4 +23,9 @@ class ApplicationController < ActionController::Base
   def cart_setting
 		@cart = current_cart
 	end
+  def check_request
+    if request.user_agent =~ /Mobile|webOS/ or params[:m].to_i == 1
+      redirect_to request.protocol + request.host_with_port + '/mobile' + request.env["REQUEST_PATH"].gsub(/\?full_site=1/, '') and return
+    end
+  end
 end

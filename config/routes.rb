@@ -18,6 +18,10 @@ Store::Application.routes.draw do
   match '/carts' => 'carts#index'
   match '/carts/insert-into-cart' => 'carts#insert_into_cart', :via => :post
   match 'blog' => 'site#blog'
+  
+  scope "/mobile", :as => "mobile" do
+    match "/products" => "mobile/products#index"
+  end
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

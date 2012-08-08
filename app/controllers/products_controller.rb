@@ -4,7 +4,6 @@ class ProductsController < ApplicationController
   # GET /products.json
   def index
     @products = Product.all
-    render :template => "/products/mobile_index" if params[:m].present?
   end
 
   # GET /products/1
