@@ -21,6 +21,7 @@ Store::Application.routes.draw do
   
   scope "/mobile", :as => "mobile" do
     match "/products" => "mobile/products#index"
+    match "/" => "mobile/products#index"
   end
 
   # The priority is based upon order of creation:
