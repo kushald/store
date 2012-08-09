@@ -6,7 +6,7 @@
     <% @products.each do |product| %>
       <li class="span3">  
         <div class="thumbnail">  
-          <img src="http://dl.dropbox.com/u/14805214/<%= product.name %>.jpg" alt="product">  
+          <img src="http://dl.dropbox.com/u/14805214/<%= product.name %>.jpg" height="195" width="260"  alt="product">  
           <div class="caption">  
             <h5><%= product.name %></h5>  
             <p style="color:cadetblue"><b>$<%= product.price %></b></p>  
@@ -39,15 +39,12 @@
   </ul>
 </div>
 <script type="text/javascript">
+  var maxHeight = 0;
   $(function() {
-    $(".buy").click(function(){
-    $.ajax({
-      url: "/carts/insert-into-cart",
-      type: "POST",
-      data:{
-      product_id: $(this).attr("id")
-      },
-      success:function(){
-       
+    $('.thumbnails li').each(function() 
+      { 
+        maxHeight = Math.max(maxHeight, $(this).height()); }).height(maxHeight);
+
   });
+  
 </script>
