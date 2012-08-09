@@ -1,7 +1,9 @@
-<div data-role="content" style="padding: 15px">
-  <ul data-role="listview" data-inset="true" data-theme="a">
+
+<div data-role="content">
+  <ul data-role="listview" data-inset="true" data-divider-theme="b">
+    <li data-role="list-divider">Menu</li>
     <% @products.each do |p| %>
-      <li data-icon="arrow-r"><a href="#"><%= p.name %></a></li>
+      <li><a href="#"><%= p.name %></a></li>
     <% end %>
   </ul>
 </div>
