@@ -1,7 +1,7 @@
 Store::Application.routes.draw do
   get "users/new"
 
-  #get "site/about_us"
+  get "site/about_us"
   get "site/contact_us"
   get "site/blog"
 
