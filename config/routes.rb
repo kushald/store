@@ -1,7 +1,7 @@
 Store::Application.routes.draw do
   get "users/new"
 
-  get "site/about_us"
+  #get "site/about_us"
   get "site/contact_us"
   get "site/blog"
 
@@ -19,9 +19,12 @@ Store::Application.routes.draw do
   match '/carts/insert-into-cart' => 'carts#insert_into_cart', :via => :post
   match 'blog' => 'site#blog'
   
+  
+  # Mobile Routes.
   scope "/mobile", :as => "mobile" do
+    match "/" => "mobile/sessions#new", :via => :get
     match "/products" => "mobile/products#index"
-    match "/" => "mobile/products#index"
+    match "/sessions" => "mobile/sessions#create", :via => :post
   end
 
   # The priority is based upon order of creation:

@@ -3,7 +3,6 @@ class ApplicationController < ActionController::Base
   protect_from_forgery
   include SessionsHelper
   before_filter :current_user
-  before_filter :cart_setting
   before_filter :check_request
   
   private
