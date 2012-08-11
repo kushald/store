@@ -1,4 +1,5 @@
 class Mobile::SessionsController < ApplicationController
+  skip_before_filter :check_request
   layout "admin"
   def new
   end
