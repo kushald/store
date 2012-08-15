@@ -25,6 +25,8 @@ Store::Application.routes.draw do
     match "/" => "mobile/sessions#new", :via => :get
     match "/products" => "mobile/products#index"
     match "/sessions" => "mobile/sessions#create", :via => :post
+    match "/home" => "mobile/site#home"
+    match "/contact-us" => "mobile/site#contact_us"
   end
 
   # The priority is based upon order of creation:

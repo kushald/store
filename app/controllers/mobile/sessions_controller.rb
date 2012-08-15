@@ -9,7 +9,7 @@ class Mobile::SessionsController < ApplicationController
     if user && user.authenticate(params[:session][:password])
       session[:user_id] = user.id
       sign_in user
-      redirect_to "/mobile/products"
+      redirect_to "/mobile/home"
     else
       flash.now[:error] = 'Invalid email/password combination'
       render 'new'

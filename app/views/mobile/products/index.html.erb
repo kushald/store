@@ -1,9 +1,12 @@
-
 <div data-role="content">
   <ul data-role="listview" data-inset="true" data-divider-theme="e">
     <li data-role="list-divider">Menu</li>
     <% @products.each do |p| %>
-      <li><a href="#"><img src="http://dl.dropbox.com/u/14805214/<%= p.name %>.jpg" height="80" width="80"/><h3><%= p.name %></h3></a></li>
+      <li>
+        <a href="#"><img src="http://dl.dropbox.com/u/14805214/<%= p.name %>.jpg" height="80" width="80"/>
+          <h3><%= p.name %></h3>
+        </a>
+      </li>
     <% end %>
   </ul>
 </div>
