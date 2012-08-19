@@ -10,7 +10,7 @@
           <div class="caption">  
             <h5><%= product.name %></h5>  
             <p style="color:cadetblue"><b>$<%= product.price %></b></p>  
-            <p> <a class="btn btn-warning" data-toggle="modal" href="#myModal_<%= product.id %>" >More info</a>
+            <p style=" float: left; margin-right: 6px; "> <a class="btn btn-warning" data-toggle="modal" href="#myModal_<%= product.id %>" >More info</a>
               <%= button_to 'Add to Cart', "/carts/insert-into-cart/?product_id=#{product.id}",class: "btn btn-primary", :remote => true %>
             </p>  
           </div>  
