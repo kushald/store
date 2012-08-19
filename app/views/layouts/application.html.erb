@@ -63,27 +63,47 @@
   <div class="container">
 <%#= render :partial => "shared/flash_messages", :locals => {:flash => flash} %>
   <div class="row">
-    <div class="span9"><%= yield %></div>
-    <div class="span3">
-      <div class="page-header">
-</div>
-<div id="cart" >
-<% if @cart %>
-
-
-<%= render @cart %>
-
-<% end %>
-</div>
-    </div>
+    <div class="span12"><%= yield %></div>
+<div id="umbrella">
+        <ul class="clearfix">
+          
+          
+          <li class="customer-account-links">
+            
+              <p><a href="/account/login" id="customer_login_link">Login</a></p>
+            
+          </li>
+               
+          
+                         
+          
+          <li class="cart-link">
+            <a href="/cart" class="num-items-in-cart">
+              <span class="icon">
+               1 item
+              </span>
+            </a>             
+          </li>
+          
+          <li class="checkout-link">
+            <a href="/checkout" class="btn btn-danger">Checkout</a>              
+          </li>
+          
+        </ul>
+      </div>
   </div>
 </div>
 </body>
 </html>
 
-<script>  
-$(function ()  
-{ $("#example").popover();
-
-});  
+<script>
+$().ready(function() {
+    var $scrollingDiv = $("#umbrella");
+ 
+    $(window).scroll(function(){      
+      $scrollingDiv
+        .stop()
+        .animate({"marginTop": ($(window).scrollTop() + 50) + "px"}, "slow" );      
+    });
+  });
 </script>
