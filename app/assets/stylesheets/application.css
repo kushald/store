@@ -86,4 +86,6 @@
     display: inline;
     color: #565656;
 }
-
+.navbar-search .search-query {
+    border-radius: 25px;
+}
