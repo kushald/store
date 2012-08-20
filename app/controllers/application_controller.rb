@@ -4,11 +4,12 @@ class ApplicationController < ActionController::Base
   include SessionsHelper
   before_filter :current_user
   before_filter :check_request
+  before_filter :current_cart
   
   private
   def current_cart
     if session[:cart].present?
-      @cart = Cart.where("id=?",session[:cart])
+      @cart = Cart.where("id=?",session[:cart]).first
     else
       @cart = Cart.create
       session[:cart] = @cart.id
