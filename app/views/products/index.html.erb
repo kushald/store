@@ -11,7 +11,7 @@
             <h3><%= product.name %></h3>  
             <p style="color:cadetblue;font-size: 24px;"><b>$<%= product.price %></b></p>  
             <p style=" float: left; margin-right: 6px; "> <a class="btn btn-warning" data-toggle="modal" href="#myModal_<%= product.id %>" >More info</a>
-              <%= button_to 'Add to Cart', "/carts/insert-into-cart/?product_id=#{product.id}",class: "btn btn-primary", :remote => true %>
+              <%= button_to 'Order', "/carts/insert-into-cart/?product_id=#{product.id}",class: "btn btn-success", :remote => true %>
             </p>  
           </div>  
         </div>  
