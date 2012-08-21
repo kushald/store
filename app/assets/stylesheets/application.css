@@ -95,3 +95,27 @@
 .thumbnail:hover{
 box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
 }
+#about-img {
+  width: 960px;
+  height: 500px;
+  display: block;
+  border: 7px solid #CCC;
+  margin: 30px 10px 51px 54px;
+  background: url('http://stuffkit.com/wp-content/uploads/2011/03/www.stuffkit.com-443.jpg') no-repeat;
+  overflow: hidden;
+}
+.about-img-text {
+width: 356px;
+float: left;
+margin-top: 44px;
+margin-left: 346px;
+font-size: 15px;
+}
+#about-img h1 {
+    margin: 171px 220px 0px 285px;
+    -webkit-transform: rotate(-16deg);
+    
+}
+#border-img {
+    border: 7px solid #CCC;
+}
