@@ -121,3 +121,6 @@ font-size: 15px;
     border: 7px solid #CCC;
     border-radius: 120px;
 }
+#stamp-us {
+    -webkit-transform: rotate(-12deg);
+}
