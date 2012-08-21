@@ -96,6 +96,7 @@
 box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
 }
 #about-img {
+  border-radius: 82px;
   width: 960px;
   height: 500px;
   display: block;
@@ -118,4 +119,5 @@ font-size: 15px;
 }
 #border-img {
     border: 7px solid #CCC;
+    border-radius: 120px;
 }
