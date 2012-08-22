@@ -124,3 +124,16 @@ font-size: 15px;
 #stamp-us {
     -webkit-transform: rotate(-12deg);
 }
+
+.sign-in{
+height: 447px;
+width: 226px;
+border: 1px solid #CCC;
+padding: 61px;
+border-radius: 24px;
+margin-left: 300px;
+-webkit-box-shadow: 10px 10px 30px #CCC;
+}
+.header-middle{
+  margin-left: 403px;
+}
