@@ -3,7 +3,7 @@
 
 <div class="sign-in">
   <div>
-    <%= form_for(:session, url: sessions_path) do |f| %>
+    <%= form_for(:session, url: sessions_path, :html => {:id => "validate-login"}) do |f| %>
 
       <%= f.label :email %>
       <%= f.text_field :email %><br />
@@ -17,3 +17,22 @@
     <p>New user? <%= link_to "Sign up now!", signup_path %></p>
   </div>
 </div>
+
+<script>
+  $("#validate-login").validate({
+   rules: {
+     "session[email]": {
+       required: true,
+       email: true
+     },
+     "session[password]": "required"
+   },
+   messages: {
+     "session[email]": {
+       required: "Please provide your email address",
+       email: "Your email address must be in the format of name@domain.com"
+     },
+     "session[password]": "Password is mandatory"
+   }
+})
+</script>

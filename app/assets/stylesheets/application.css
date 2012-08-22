@@ -128,7 +128,7 @@ font-size: 15px;
 }
 
 .sign-in{
-height: 348px;
+height: 387px;
 width: 226px;
 border: 1px solid #CCC;
 padding: 61px;
@@ -139,4 +139,7 @@ margin-left: 300px;
 }
 .header-middle{
   margin-left: 403px;
+}
+.error{
+    color: red;
 }

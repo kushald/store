@@ -3,16 +3,16 @@
 
 <div class="sign-in">
   <div>
-    <%= form_for(@user) do |f| %>
+    <%= form_for @user, :html => { :id => 'registerHere'} do |f| %>
 
       <%= f.label :name %>
-      <%= f.text_field :name %><br />
+      <%= f.text_field :name, :id => "name" %><br />
 
       <%= f.label :email %>
-      <%= f.text_field :email %><br />
+      <%= f.text_field :email, :id => "email" %><br />
 
       <%= f.label :password %>
-      <%= f.password_field :password %><br />
+      <%= f.password_field :password, :id => "password" %><br />
 
       <%= f.label :password_confirmation, "Confirmation" %>
       <%= f.password_field :password_confirmation %>
@@ -21,3 +21,34 @@
     <% end %>
   </div>
 </div>
+<script>
+  //$(document).ready(funtion(){
+  
+    $("#registerHere").validate({
+   rules: {
+     "user[name]": "required",
+     "user[email]": {
+       required: true,
+       email: true
+     },
+     "user[password]": {required:true,minlength: 6},
+     "user[password_confirmation]": {required:true,equalTo: "#user[password]"}
+   },
+   messages: {
+     "user[name]": "Please specify your name",
+     "user[email]": {
+       required: "Email address required for login.",
+       email: "Your email address must be in the format of name@domain.com"
+     },
+     "user[password]": {
+      minlength:"Password must be minimum 6 characters",
+      required: "Password is mandatory"},
+     "user[password_confirmation]": {
+        required:"Enter confirm password"
+     }
+   }
+})
+  
+  
+  //});
+</script>
