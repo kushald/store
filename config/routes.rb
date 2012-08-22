@@ -15,7 +15,7 @@ Store::Application.routes.draw do
   match '/modal' => "products#modal"
   
   # Cart Routes
-  match '/carts' => 'carts#index'
+  match '/cart' => 'carts#index'
   match '/carts/insert-into-cart' => 'carts#insert_into_cart', :via => :post
   match 'blog' => 'site#blog'
   
