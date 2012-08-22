@@ -35,16 +35,16 @@
      "user[password_confirmation]": {required:true,equalTo: "#user[password]"}
    },
    messages: {
-     "user[name]": "Please specify your name",
+     "user[name]": "* Please specify your name",
      "user[email]": {
-       required: "Email address required for login.",
-       email: "Your email address must be in the format of name@domain.com"
+       required: "* Email address required for login.",
+       email: "* Your email address must be in the format of name@domain.com"
      },
      "user[password]": {
-      minlength:"Password must be minimum 6 characters",
-      required: "Password is mandatory"},
+      minlength:"* Password must be minimum 6 characters",
+      required: "* Password is mandatory"},
      "user[password_confirmation]": {
-        required:"Enter confirm password"
+        required:"* Enter confirm password"
      }
    }
 })
