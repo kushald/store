@@ -14,7 +14,7 @@
 /* tables */
 
 #umbrella{
-    margin: 50px 3px 0px 0px;
+    margin: 45px 3px 0px 0px;
     background: #eeeeee;
     padding: 0 10px 0 12px;
     font-size: 12px;
@@ -115,6 +115,7 @@ font-size: 15px;
 #about-img h1 {
     margin: 171px 220px 0px 285px;
     -webkit-transform: rotate(-16deg);
+    -moz-transform: rotate(-16deg);
     
 }
 #border-img {
@@ -123,16 +124,18 @@ font-size: 15px;
 }
 #stamp-us {
     -webkit-transform: rotate(-12deg);
+    -moz-transform: rotate(-12deg);
 }
 
 .sign-in{
-height: 447px;
+height: 348px;
 width: 226px;
 border: 1px solid #CCC;
 padding: 61px;
 border-radius: 24px;
 margin-left: 300px;
 -webkit-box-shadow: 10px 10px 30px #CCC;
+-moz-box-shadow: 10px 10px 30px #CCC;
 }
 .header-middle{
   margin-left: 403px;
