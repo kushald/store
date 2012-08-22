@@ -1,6 +1,55 @@
-<%#
+<%
 # To change this template, choose Tools | Templates
 # and open the template in the editor.
+cart_items = @items[:cart_items]
+products = @items[:products]
 %>
+<div id="content">
+  <div id="mainbar">
+    <div id="main">
+      <div class="page-head">
+        <h1>My Cart</h1>
+      </div>
+      <div id="shoppingcart">
+        <form action="/cart" method="post" name="cartform">
+          <!-- START TABLE -->
+          <table cellpadding="10" cellspacing="0">
+            <!-- START HEADERS -->
+            <tbody><tr>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Delete</th>
+                <th>Total</th>
+              </tr>
+              <!-- END HEADERS -->
+              <!-- START PRODUCT 1 -->
+              <% cart_items.each do |item| %>
+                <tr class="odd">
+                  <td class="pic">
+                    <div>
+                      <a href="#">
+                        <img src="http://dl.dropbox.com/u/14805214/<%= products[item].name %>.jpg" alt="<%= products[item].name %>" width="100px" height="100px">
+                      </a>
+                    </div>
+                    <h3><a href="#"><%= products[item].name %></a></h3>
+                  </td>
+                  <td class="price">$<%= products[item].price %></td>
+                  <td><input type="text" class="field" name="update" id="update" value="1" size="3"></td>
+                  <td class="remove"><a href="#">Remove</a></td>
+                  <td class="price">$<%= products[item].price %></td>
+                </tr>
+              <% end %>
+              <!-- END PRODUCT -->
+            </tbody>
+          </table>
 
-<%= @cart %>
+          <!-- END TABLE -->
+        </form>
+        <div class="clr"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+

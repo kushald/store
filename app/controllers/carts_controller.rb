@@ -1,6 +1,6 @@
 class CartsController < ApplicationController
   def index
-    @cart = Cart.all
+    @items = Cart.item_details(:cart_id => @cart.try(:id).to_i)
   end
   
   # Insert into cart items.
