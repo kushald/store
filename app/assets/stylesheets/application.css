@@ -32,11 +32,10 @@
     opacity: 0.9;
 }
 
-#cart-circle a{ 
-    margin: 10px;
+#cart-circle a{
     color: #54534f;
     text-decoration: none;
-    font-size: 23px;
+    font-size: 22px;
 }
 #cart-circle a:hover{ color: #ed3933; }
 
