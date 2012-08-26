@@ -3,42 +3,22 @@
 
 content = Cart.item_details(:cart_id => session[:cart])
 %>
-<div id="umbrella">
-  <ul class="clearfix">
-
-
-    <li class="customer-account-links">
-
-      <p><a href="/account/login" id="customer_login_link">Login</a></p>
-
-    </li>
-
-
-
-
-    <li class="cart-link">
-      <a href="/cart" class="num-items-in-cart">
-        <span class="icon">
-          <%=  content[:cart_items].count rescue 0 %> item
-        </span>
+<div id="cart-circle">
+    <div class="cart-link">
+      <a href="/cart" class="num-items-in-cart">cart
+        <span class="icon"><i class="icon-shopping-cart icon-white"></i> <%=  content[:cart_items].count rescue 0 %> item</span>
       </a>             
-    </li>
-
-    <li class="checkout-link">
-      <a href="/checkout" class="btn btn-danger">Checkout</a>              
-    </li>
-
-  </ul>
+    </div>
 </div>
 
 <script>
   $().ready(function() {
-  var $scrollingDiv = $("#umbrella");
+  var $scrollingDiv = $("#cart-circle");
 
   $(window).scroll(function(){      
   $scrollingDiv
   .stop()
-  .animate({"marginTop": ($(window).scrollTop() + 45) + "px"}, "slow" );      
+  .animate({"marginTop": ($(window).scrollTop() + 43) + "px"}, "slow" );      
   });
   });
 </script>

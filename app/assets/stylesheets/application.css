@@ -13,8 +13,10 @@
 */
 /* tables */
 
-#umbrella{
-    margin: 45px 3px 0px 0px;
+#cart-circle{
+    height: 3em;
+    width: 15em;
+    margin: 43px 3px 0px 0px;
     background: #eeeeee;
     padding: 0 10px 0 12px;
     font-size: 12px;
@@ -24,52 +26,19 @@
     right: 0;
     -webkit-border-radius: 0 0 6px 6px;
     -moz-border-radius: 0 0 6px 6px;
-    border-radius: 0 0 6px 6px; 
+    border-radius: 1px 0px 17px 17px; 
     color: #54534f;
+    border: 3px solid;
+    opacity: 0.9;
 }
 
-#umbrella ul{
-    float: right;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-#umbrella li{
-    float: left;
-    padding: 6px 12px 10px 0;
-    margin: 0 12px 0 0;
-    border-right: solid 1px #cccccc;
-    font-weight: normal;
-} 
-#umbrella p{
-    margin: 0;
-}
-#umbrella a{ 
+#cart-circle a{ 
+    margin: 10px;
     color: #54534f;
     text-decoration: none;
+    font-size: 23px;
 }
-#umbrella a:hover{ color: #ed3933; }
-
-#umbrella .num-items-in-cart .icon{
-    display: block;
-    padding: 0 0 0 26px;    
-
-    background: url(http://static.shopify.com/s/files/1/0109/7702/t/5/assets/cart-icons.png?1781) 0 0 no-repeat;
-
-}
-#umbrella .num-items-in-cart:hover .icon{
-
-    background: url(http://static.shopify.com/s/files/1/0109/7702/t/5/assets/cart-icons.png?1781) 0 -29px no-repeat;
-
-}
-
-#umbrella .checkout-link{
-    padding: 0;
-    margin-right: 0;
-    border: none;
-}
-#umbrella .checkout-link a{ color: #ffffff; }
-#umbrella .checkout-link a:hover{ color: #ffffff; }
+#cart-circle a:hover{ color: #ed3933; }
 
 .navbar-fixed-top {
     opacity: 0.9;
