@@ -15,7 +15,7 @@
 
 #cart-circle{
     height: 3em;
-    width: 15em;
+    width: 12em;
     margin: 43px 3px 0px 0px;
     background: #eeeeee;
     padding: 0 10px 0 12px;
@@ -35,7 +35,7 @@
 #cart-circle a{
     color: #54534f;
     text-decoration: none;
-    font-size: 22px;
+    font-size: 19px;
 }
 #cart-circle a:hover{ color: #ed3933; }
 
