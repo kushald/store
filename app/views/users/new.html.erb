@@ -3,7 +3,7 @@
 
 <div class="sign-in">
   <div>
-    <%= form_for @user, :html => { :id => 'registerHere'} do |f| %>
+    <%= form_for "/products", :html => { :id => 'registerHere'} do |f| %>
 
       <%= f.label :name %>
       <%= f.text_field :name, :id => "name" %><br />
@@ -31,8 +31,7 @@
        required: true,
        email: true
      },
-     "user[password]": {required:true,minlength: 6},
-     "user[password_confirmation]": {required:true,equalTo: "#user[password]"}
+     "user[password]": {required:true,minlength: 6}
    },
    messages: {
      "user[name]": "* Please specify your name",
