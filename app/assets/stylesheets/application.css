@@ -151,3 +151,7 @@ h1 {
     text-decoration: none;
     background-color: black;
 }
+tr:hover {
+    background: #EEE;
+    border-radius: 10px;
+}
