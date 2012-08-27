@@ -56,35 +56,36 @@
 }
 .navbar-search .search-query {
     border-radius: 25px;
+    font-family: cursive;
 }
 .btn[class]{
     text-shadow: 0 1px 1px #333;
 }
 .thumbnail:hover{
-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
 }
 #about-img {
-  border-radius: 82px;
-  width: 960px;
-  height: 500px;
-  display: block;
-  border: 7px solid #CCC;
-  margin: -24px 10px 51px 54px;
-  background: url('http://stuffkit.com/wp-content/uploads/2011/03/www.stuffkit.com-443.jpg') no-repeat;
-  overflow: hidden;
+    border-radius: 82px;
+    width: 960px;
+    height: 500px;
+    display: block;
+    border: 7px solid #CCC;
+    margin: -24px 10px 51px 54px;
+    background: url('http://stuffkit.com/wp-content/uploads/2011/03/www.stuffkit.com-443.jpg') no-repeat;
+    overflow: hidden;
 }
 .about-img-text {
-width: 356px;
-float: left;
-margin-top: 44px;
-margin-left: 346px;
-font-size: 15px;
+    width: 356px;
+    float: left;
+    margin-top: 44px;
+    margin-left: 346px;
+    font-size: 15px;
 }
 #about-img h1 {
     margin: 171px 220px 0px 285px;
     -webkit-transform: rotate(-16deg);
     -moz-transform: rotate(-16deg);
-    
+
 }
 #border-img {
     border: 7px solid #CCC;
@@ -96,36 +97,57 @@ font-size: 15px;
 }
 
 .sign-in{
-height: 387px;
-width: 226px;
-border: 1px solid #CCC;
-padding: 61px;
-border-radius: 24px;
-margin-left: 300px;
--webkit-box-shadow: 10px 10px 30px #CCC;
--moz-box-shadow: 10px 10px 30px #CCC;
+    height: 387px;
+    width: 226px;
+    border: 1px solid #CCC;
+    padding: 61px;
+    border-radius: 24px;
+    margin-left: 300px;
+    -webkit-box-shadow: 10px 10px 30px #CCC;
+    -moz-box-shadow: 10px 10px 30px #CCC;
 }
 .header-middle{
-  margin-left: 403px;
+    margin-left: 403px;
 }
 .error{
     color: red;
 }
 #shoppingcart{
-margin-left: 182px;
-width: 592px;
-height: auto;
-border: 1px solid #EEE;
-padding: 12px;
-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
--webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
--moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-border-radius: 2px;
+    margin-left: 182px;
+    width: 592px;
+    height: auto;
+    border: 1px solid #EEE;
+    padding: 12px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 2px;
 }
 #shoppingcart td {
-border-bottom: 1px solid #CCC;
+    border-bottom: 1px solid #CCC;
 }
 #shoppingcart th {
-text-transform: uppercase;
-border-bottom: 2px solid #666;
+    text-transform: uppercase;
+    border-bottom: 2px solid #666;
+}
+h1 {
+    color: lightGrey;
+    font: normal normal 3.5em Arvo;
+    text-transform: uppercase;
+    margin: 60px 0 20px 0;
+    padding-bottom: 10px;
+}
+.remove a {
+    height: 1px;
+    width: 19px;
+    background-color: #333;
+    padding: 6px;
+    border-radius: 6px;
+    color: white;
+    text-decoration: none;
+}
+.remove a:hover {
+    color: white;
+    text-decoration: none;
+    background-color: black;
 }
