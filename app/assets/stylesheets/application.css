@@ -151,7 +151,6 @@ h1 {
     text-decoration: none;
     background-color: black;
 }
-tr:hover {
-    background: #EEE;
+select{
     border-radius: 10px;
 }

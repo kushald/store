@@ -30,7 +30,7 @@ products = @items[:products]
                   </td>
                   <td class="price">$<%= products[item].price %></td>
                   <td>
-                    <select style="width: 42px" class="select-quantity" product-id="<%= products[item].id %>">
+                    <select style="width: 47px;" class="select-quantity" product-id="<%= products[item].id %>">
                       <% (1..10).each do |i| %>
                         <% selectedvalue = cart_items[item].quantity == i ? "selected" : "" %>
                         <option value="<%= i %>" <%= selectedvalue %>><%= i %></option>
