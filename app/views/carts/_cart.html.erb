@@ -1,12 +1,12 @@
 
 <%
 
-content = Cart.item_details(:cart_id => session[:cart])
+content = Cart.item_details(:cart_id => session[:cart])[:quantity]
 %>
 <div id="cart-circle">
     <div class="cart-link">
       <a href="/cart" class="num-items-in-cart">cart
-        <span class="icon"><i class="icon-shopping-cart icon-white"></i> <%=  content[:cart_items].count rescue 0 %> item</span>
+        <span class="icon"><i class="icon-shopping-cart icon-white"></i> <%=  content rescue 0 %> item</span>
       </a>             
     </div>
 </div>

@@ -8,8 +8,13 @@ class CartsController < ApplicationController
   # Insert into cart items.
   def insert_into_cart
     return if params[:product_id].blank?
-    @cart_item = CartItem.create(:cart_id => @cart.id,:product_id => params[:product_id])
-    
+    present = CartItem.where("cart_id = ? AND product_id = ?", @cart.id, params[:product_id]).first
+    if present.present?
+      present.quantity += 1
+      present.save
+    else
+      @cart_item = CartItem.create(:cart_id => @cart.id,:product_id => params[:product_id],:quantity => 1)
+    end
     respond_to do |format|
       format.js{
         render :template => "/carts/insert_into_cart"
