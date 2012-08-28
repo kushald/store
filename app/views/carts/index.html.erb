@@ -48,9 +48,12 @@ products = @items[:products]
       $.ajax({
         url: "/cart/?request_for=delete&product_id="+ this.id,
          success: function(data) {
-                  cartItems = $("tr.odd").length-1;
-                  $(".icon").html('<span class="icon"><i class="icon-shopping-cart icon-white"></i> '+ cartItems +' item</span>');
+                  var cartItems = 0;
                   $('#content').html(data);
+                  $("input.field").each(function(){
+                    cartItems += Number($(this).val());
+                  });
+                  $(".icon").html('<span class="icon"><i class="icon-shopping-cart icon-white"></i> '+ cartItems +' item</span>');
                   }
       });
     });
