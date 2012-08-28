@@ -168,3 +168,13 @@ select{
     color: white;
     text-decoration: none;
 }
+#thank {
+width: 624px;
+height: 267px;
+border: 1px solid;
+margin: 100px 100px 100px 200px;
+padding: 51px;
+background: #333;
+color: white;
+border-radius: 589px;
+}

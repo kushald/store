@@ -20,7 +20,10 @@ Store::Application.routes.draw do
   match 'blog' => 'site#blog'
   match 'update-quantity' => 'carts#update_quantity', :via => :post
   
-  
+  # Cart Routes
+  match '/orders/new' => 'orders#new'
+  match '/orders/create' => 'orders#create'
+  match '/orders/thank-you' => 'orders#thank_you'
   # Mobile Routes.
   scope "/mobile", :as => "mobile" do
     match "/" => "mobile/sessions#new", :via => :get
