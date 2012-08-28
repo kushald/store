@@ -21,4 +21,9 @@ class CartsController < ApplicationController
       }
     end
   end
+  
+  def update_quantity
+    CartItem.update_all(["quantity=?",params[:quantity]],["cart_id = ? AND product_id = ?",@cart.id,params[:product_id]])
+    render :json => {}
+  end
 end

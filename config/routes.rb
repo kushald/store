@@ -18,6 +18,7 @@ Store::Application.routes.draw do
   match '/cart' => 'carts#index'
   match '/carts/insert-into-cart' => 'carts#insert_into_cart', :via => :post
   match 'blog' => 'site#blog'
+  match 'update-quantity' => 'carts#update_quantity', :via => :post
   
   
   # Mobile Routes.
