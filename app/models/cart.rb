@@ -5,10 +5,13 @@ class Cart < ActiveRecord::Base
   def after_cart_create
   end
   def self.item_details(params)
-    sum = 0
+    total = sum = 0
     cart_items = CartItem.where(:cart_id => params[:cart_id]).order("updated_at desc").index_by(&:product_id)
     products = Product.where("id IN (?)", cart_items.keys).index_by(&:id)
-    cart_items.each{|i| sum+= i[1].quantity.to_i}
-    {:cart_items => cart_items, :products => products, :quantity => sum.to_i}
+    cart_items.each do |i| 
+      sum+= i[1].quantity.to_i
+      total+= (products[i[0]].price * i[1].quantity)
+    end
+    {:cart_items => cart_items, :products => products, :quantity => sum.to_i, :total => total}
   end
 end

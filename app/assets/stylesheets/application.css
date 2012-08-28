@@ -154,3 +154,17 @@ h1 {
 select{
     border-radius: 10px;
 }
+.checkout a {
+    height: 1px;
+    width: 19px;
+    background-color: maroon;
+    padding: 6px;
+    border-radius: 6px;
+    color: white;
+    text-decoration: none;
+    margin-left: 349px;
+}
+.checkout a:hover {
+    color: white;
+    text-decoration: none;
+}
