@@ -117,7 +117,7 @@
     width: 449px;
     height: auto;
     border: 1px solid #EEE;
-    padding: 12px;
+    padding: 20px;
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
     -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
@@ -158,11 +158,11 @@ select{
     height: 1px;
     width: 19px;
     background-color: maroon;
-    padding: 6px;
+    padding: 10px;
     border-radius: 6px;
     color: white;
     text-decoration: none;
-    margin-left: 349px;
+    margin-left: 328px;
 }
 .checkout a:hover {
     color: white;
