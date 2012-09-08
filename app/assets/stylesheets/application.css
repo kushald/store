@@ -181,10 +181,11 @@ border-radius: 589px;
 .price_tag{
 height: 18px;
 width: auto;
-padding: 5px 12px 0px 10px;
+padding: 11px 26px 3px 22px;
 background: #333;
 position: absolute;
-margin: -60px 0px 0px -9px;
+margin: -69px 0px 0px -9px;
 color: white;
 border-radius: 0px 8px 0px 0px;
+font-size: 18px;
 }
