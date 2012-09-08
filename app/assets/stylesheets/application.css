@@ -181,11 +181,48 @@ border-radius: 589px;
 .price_tag{
 height: 18px;
 width: auto;
-padding: 11px 26px 3px 22px;
+padding: 8px 26px 3px 22px;
 background: #333;
 position: absolute;
-margin: -69px 0px 0px -9px;
+margin: -65px 0px 0px -9px;
 color: white;
 border-radius: 0px 8px 0px 0px;
 font-size: 18px;
+}
+.order-button.green-button {
+background-color: #439016;
+background-image: -webkit-gradient(linear,50% 0,50% 100%,color-stop(0%,#4EB51E),color-stop(50%,#49A51B),color-stop(50%,#479D19),color-stop(100%,#439016));
+background-image: -webkit-linear-gradient(#4EB51E 0,#49A51B 50%,#479D19 50%,#439016 100%);
+background-image: -moz-linear-gradient(#4EB51E 0,#49A51B 50%,#479D19 50%,#439016 100%);
+background-image: -o-linear-gradient(#4EB51E 0,#49A51B 50%,#479D19 50%,#439016 100%);
+background-image: linear-gradient(#4EB51E 0,#49A51B 50%,#479D19 50%,#439016 100%);
+text-shadow: #357411 0 1px 1px;
+border-top-color: #5EC424;
+border-bottom-color: #367A12;
+color: white;
+}
+.order-button{
+font-family: "myriad-pro-semi-condensed-1","myriad-pro-semi-condensed-2",Arial,sans-serif;
+font-weight: 700;
+-webkit-font-smoothing: antialiased;
+-webkit-border-radius: 3px;
+-khtml-border-radius: 3px;
+-moz-border-radius: 3px;
+-ms-border-radius: 3px;
+-o-border-radius: 3px;
+border-radius: 3px;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+cursor: pointer;
+display: inline-block;
+vertical-align: top;
+border: 0;
+margin-left: -14px;
+text-align: center;
+padding: 0px 11px 0px 11px;
+font-size: 16px;
+line-height: 36px;
+border-width: 1px 0;
+border-style: solid;
 }
