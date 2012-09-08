@@ -8,8 +8,8 @@
         <div class="thumbnail">  
           <img src="http://dl.dropbox.com/u/14805214/<%= product.name %>.jpg" height="195" width="260"  alt="product">  
           <div class="caption">  
-            <h3 style="border-bottom: 1px #333 solid;margin: 5px;"><%= product.name %></h3>  
-            <p style="color:#54534F;font-size: 18px;padding: 4px;"><b>$<%= product.price %></b></p>  
+            <h3><%= product.name %></h3>  
+            <p class="price_tag">$<%= product.price %></p>  
             <p style=" float: left; margin-right: 6px; "> <a class="btn btn-warning" data-toggle="modal" href="#myModal_<%= product.id %>" >More info</a>
               <%= button_to 'Order', "/carts/insert-into-cart/?product_id=#{product.id}",class: "btn btn-success", :remote => true %>
             </p>  
