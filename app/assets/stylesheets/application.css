@@ -294,3 +294,11 @@ padding-top: 9px;
 tr{
     text-align: center;
 }
+.cart-heading{
+margin-left: 10px;
+color: #1B325F;
+font-family: "kulturista-web-1","kulturista-web-2", helvetica, arial;
+font-size: 30px;
+font-weight: 400;
+padding: 10px;
+}

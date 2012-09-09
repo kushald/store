@@ -6,7 +6,7 @@ products = @items[:products]
   <div id="mainbar">
     <div id="main">
       <div class="page-head">
-        <h1 style="margin-left: 181px;">My Cart</h1>
+        <div class="cart-heading">My Cart</div>
       </div>
       <div id="shoppingcart">
         <form action="/cart" method="post" name="cartform">
@@ -46,7 +46,7 @@ products = @items[:products]
         </form>
         <div class="clr"></div>
         <% if cart_items.size > 0 %>
-              <p style="font-size:20px;margin-left: 830px;color: #333;">Total = ₹ <%= @items[:total] %></p><br/>
+              <p style="font-size:20px;margin-left: 804px;color: #333;">Total = ₹ <%= @items[:total] %></p><br/>
               <div class="checkout_buttons">
                 <a href="/orders/new">Checkout</a><br/>
               </div>
