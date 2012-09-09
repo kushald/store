@@ -113,8 +113,7 @@
     color: red;
 }
 #shoppingcart{
-    margin-left: 182px;
-    width: 449px;
+    width: 964px;
     height: auto;
     border: 1px solid #EEE;
     padding: 20px;
@@ -125,6 +124,7 @@
 }
 #shoppingcart td {
     border-bottom: 1px solid #CCC;
+    padding: 4px;
 }
 #shoppingcart th {
     text-transform: uppercase;
@@ -268,4 +268,29 @@ line-height: 1.4em;
 padding-top: 6px;
 min-height: 25px;
 color: #32581C;
+}
+.checkout_buttons{
+margin-left: 836px;
+width: 125px;
+background: #3C89C8 none;
+border: none;
+color: white;
+font-family: "kulturista-web-1","kulturista-web-2";
+text-align: center;
+border-radius: 3px;
+height: 32px;
+font-size: 20px;
+padding-top: 9px;
+}
+.checkout_buttons a{
+    font-family: "kulturista-web-1","kulturista-web-2";
+    color: white;
+    text-align: center;
+}
+.checkout_buttons a:hover{
+    color:white;
+    text-decoration: none;
+}
+tr{
+    text-align: center;
 }

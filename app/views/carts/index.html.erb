@@ -10,7 +10,7 @@ products = @items[:products]
       </div>
       <div id="shoppingcart">
         <form action="/cart" method="post" name="cartform">
-          <table cellpadding="10" cellspacing="0">
+          <table cellpadding="0" cellspacing="0" width="964">
             <tbody><tr>
                 <th>Description</th>
                 <th>Price</th>
@@ -44,13 +44,13 @@ products = @items[:products]
             </tbody>
           </table>
         </form>
-             <% if cart_items.size > 0 %>
-              <p style="font-size:16px;margin-left: 301px;color: #333;">Total = $<%= @items[:total] %></p><br/>
-              <div class="checkout">
+        <div class="clr"></div>
+        <% if cart_items.size > 0 %>
+              <p style="font-size:20px;margin-left: 830px;color: #333;">Total = $<%= @items[:total] %></p><br/>
+              <div class="checkout_buttons">
                 <a href="/orders/new">Checkout</a><br/>
               </div>
              <% end %>
-        <div class="clr"></div>
       </div>
     </div>
   </div>
