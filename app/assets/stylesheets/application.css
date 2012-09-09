@@ -231,3 +231,24 @@ float: left;
 margin: 15px;
 border: 1px #333 solid;
 }
+.container_12 .grid_12 {
+width: 940px;
+}
+.static-pages #body #columbus-banner {
+margin: 20px 0 0;
+}
+#columbus-banner {
+font-size: 20px;
+padding: 15px 15px 20px;
+margin: 0 0 30px;
+-webkit-border-radius: 3px;
+-khtml-border-radius: 3px;
+-moz-border-radius: 3px;
+-ms-border-radius: 3px;
+-o-border-radius: 3px;
+border-radius: 3px;
+}
+.blue-bg {
+background: #E5F0F8;
+color: #10486D;
+}
