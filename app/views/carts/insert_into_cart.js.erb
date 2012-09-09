@@ -1,2 +1,4 @@
 $('#cart').html("<%= escape_javascript(render(@cart)) %>");
 $('html, body').animate({scrollTop:0}, 'slow');
+$(".message-wrapper").show();
+setTimeout( "$('.message-wrapper').hide();",3000 );

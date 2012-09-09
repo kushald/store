@@ -14,3 +14,6 @@
 //= require jquery_ujs
 //= require twitter/bootstrap
 //= require_tree .
+$(document).ready(function(){
+    setTimeout( "$('.grid_12').hide();",30000 );
+});

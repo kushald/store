@@ -252,3 +252,20 @@ border-radius: 3px;
 background: #E5F0F8;
 color: #10486D;
 }
+.hide{
+    display: none;
+}
+.message-wrapper {
+width: 700px;
+margin: 0 auto;
+text-align: center;
+min-height: 40px;
+background: #C6DDB9;
+border-radius: 3px;
+}
+.message-text {
+line-height: 1.4em;
+padding-top: 6px;
+min-height: 25px;
+color: #32581C;
+}
