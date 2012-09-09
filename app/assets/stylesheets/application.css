@@ -184,7 +184,7 @@ width: auto;
 padding: 8px 26px 3px 22px;
 background: #333;
 position: absolute;
-margin: -65px 0px 0px -9px;
+margin: -62px 0px 0px -9px;
 color: white;
 border-radius: 0px 8px 0px 0px;
 font-size: 18px;
@@ -225,4 +225,9 @@ font-size: 16px;
 line-height: 36px;
 border-width: 1px 0;
 border-style: solid;
+}
+.modal-img{
+float: left;
+margin: 15px;
+border: 1px #333 solid;
 }
