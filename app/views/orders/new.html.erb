@@ -16,6 +16,6 @@
     <%= f.select :pay_type, Order::PAYMENT_TYPES, prompt: 'Select a payment method' %>
   </div>
   <div class="actions">
-    <%= f.submit 'Place Order' %>
+    <%= f.submit 'Place Order', :class => "order-button green-button", style: "margin:28px;" %>
   </div>
 <% end %>
