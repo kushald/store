@@ -21,7 +21,7 @@
           </a>
           <div class="caption">  
             <p style="font-size: 15px;"><%= product.name %><p>  
-            <p class="price_tag">$<%= product.price %></p>  
+            <p class="price_tag">₹ <%= product.price %></p>  
             <p style=" float: left; margin-right: 6px; ">
               <%= button_to 'Order', "/carts/insert-into-cart/?product_id=#{product.id}", class: "order-button green-button ", :remote => true %>
               </p>  
