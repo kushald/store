@@ -10,7 +10,7 @@
 #
 
 class User < ActiveRecord::Base
-  attr_accessible :email, :name, :password, :password_confirmation
+  attr_accessible :email, :name, :password, :password_confirmation, :fb_id, :fb_username
   has_secure_password
   
   
@@ -23,7 +23,16 @@ class User < ActiveRecord::Base
    before_save { |user| user.email = email.downcase }
   before_save :create_remember_token
   
-  
+  def self.fbconnect(params)
+    User.create(
+                  :name => params[:name],
+                  :email => params[:email],
+                  :fb_id => params[:fb_id],
+                  :fb_username => params[:user_name],
+                  :password => "qwaszx",
+                  :password_confirmation => "qwaszx"
+                )
+  end
   private
 
     def create_remember_token

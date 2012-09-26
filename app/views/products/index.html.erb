@@ -37,7 +37,11 @@
           <div class="modal-body">
             <img src="http://dl.dropbox.com/u/14805214/<%= product.name %>.jpg" height="195" width="260"  alt="product" class="modal-img">
             <p style="margin:12px;">
-              Food is any substance consumed to provide nutritional support for the body. It is usually of plant or animal origin, and contains essential nutrients, such as carbohydrates, fats, proteins, vitamins, or minerals. The substance is ingested by an organism and assimilated by the organism's cells in an effort to produce energy, maintain life, or stimulate growth.
+              Food is any substance consumed to provide nutritional support for the body. 
+              It is usually of plant or animal origin, and contains essential nutrients, 
+              such as carbohydrates, fats, proteins, vitamins, or minerals. 
+              The substance is ingested by an organism and assimilated by the organism's
+              cells in an effort to produce energy, maintain life, or stimulate growth.
             </p>
             <table class="table table-striped table-bordered table-condensed">
               <tbody><tr>
@@ -101,6 +105,7 @@
     </ul>
   </div>
   <script type="text/javascript">
+     
     var maxHeight = 0;
     $(function() {
     $('.thumbnails li').each(function() 
@@ -108,5 +113,4 @@
     maxHeight = Math.max(maxHeight, $(this).height()); }).height(maxHeight);
 
     });
-
   </script>

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120828193429) do
+ActiveRecord::Schema.define(:version => 20120923153654) do
 
   create_table "cart_items", :force => true do |t|
     t.integer  "user_id"
@@ -54,6 +54,8 @@ ActiveRecord::Schema.define(:version => 20120828193429) do
     t.datetime "updated_at",      :null => false
     t.string   "password_digest"
     t.string   "remember_token"
+    t.string   "fb_id"
+    t.string   "fb_username"
   end
 
   add_index "users", ["remember_token"], :name => "index_users_on_remember_token"

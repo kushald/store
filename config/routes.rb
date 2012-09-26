@@ -13,6 +13,7 @@ Store::Application.routes.draw do
   match '/signin',  to: 'sessions#new'
   match '/signout', to: 'sessions#destroy', via: :delete
   match '/modal' => "products#modal"
+  match 'fbconnect' => 'users#fbconnect'
   
   # Cart Routes
   match '/cart' => 'carts#index'

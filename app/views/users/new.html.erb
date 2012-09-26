@@ -20,7 +20,11 @@
       <%= f.submit "Create my account", class: "btn btn-large btn-success" %>
     <% end %>
   </div>
+  <div id="fb-root"></div>
+<div id="user-info"></div>
+<p><button id="fb-auth">Login</button></p>
 </div>
+<div class="fb-login-button" data-show-faces="true" data-width="300" data-max-rows="1"></div>
 <script>
   //$(document).ready(funtion(){
   
@@ -48,6 +52,8 @@
    }
 })
   
+  $(document).ready(funtion(){
   
-  //});
+    
+  });
 </script>
