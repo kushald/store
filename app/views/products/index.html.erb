@@ -20,9 +20,12 @@
             <img src="http://dl.dropbox.com/u/14805214/<%= product.name %>.jpg" height="195" width="260"  alt="product">
           </a>
           <div class="caption">  
-            <p style="font-size: 15px;"><%= product.name %><p>  
-            <p class="price_tag">₹ <%= product.price %></p>  
-            <p style=" float: left; margin-right: 6px; ">
+            <p style="font-size: 15px;color: #55A4F2;"><%= product.name %><p>
+            <p class="price_tag">₹ <%= product.price %></p>
+            <p class="content-desc">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+              dolore eu fugiat nulla pariatur.</p>
+            <p style=" float: left; margin-right: 10px; ">
               <%= button_to 'Order', "/carts/insert-into-cart/?product_id=#{product.id}", class: "order-button green-button ", :remote => true %>
               </p>  
             </div>  

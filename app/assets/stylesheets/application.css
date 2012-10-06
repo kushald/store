@@ -302,3 +302,18 @@ font-size: 30px;
 font-weight: 400;
 padding: 10px;
 }
+.thumbnail {
+    min-height: 360px;
+    width: 220px;
+}
+.caption h2 {
+    font-size: 12px;
+}
+.content-desc {
+color: #999!important;
+font-size: 12px!important;
+line-height: 15px;
+text-overflow: ellipsis;
+overflow: hidden;
+word-wrap: word-break;
+}
