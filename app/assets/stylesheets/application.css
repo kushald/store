@@ -317,3 +317,25 @@ text-overflow: ellipsis;
 overflow: hidden;
 word-wrap: word-break;
 }
+#sidebar {
+display: inline;
+float: left;
+margin-left: 10px;
+margin-right: 10px;
+border-left: 1px solid #E6E6E6;
+padding: 0 20px 50px;
+width: 179px;
+}
+ul.stock-list {
+position: relative;
+list-style: none;
+font-size: 14px;
+}
+ul.stock-list li {
+    margin: 0 0 12px -17px;
+    text-decoration: none;
+}
+#sidebar h3 {
+    color: #333;
+    font-size: 13px;
+}
