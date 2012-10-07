@@ -310,7 +310,7 @@ padding: 10px;
     font-size: 12px;
 }
 .content-desc {
-color: #999!important;
+color: #333!important;
 font-size: 12px!important;
 line-height: 15px;
 text-overflow: ellipsis;
@@ -338,4 +338,7 @@ ul.stock-list li {
 #sidebar h3 {
     color: #333;
     font-size: 13px;
+}
+li a {
+    color: #55A4F2;
 }
