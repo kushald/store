@@ -342,3 +342,7 @@ ul.stock-list li {
 li a {
     color: #55A4F2;
 }
+.carousel-width {
+    width: 289px;
+    float: left;
+}

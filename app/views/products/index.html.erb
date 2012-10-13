@@ -122,6 +122,49 @@
     </ul>
   </div>
 </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="span12">
+        <h2>Popular</h2>
+        <p> </p>
+        <div id="myCarousel" class="carousel slide">
+          <!-- Carousel items -->
+          <div class="carousel-inner">
+            <% @products.length/2.times do |i| %>
+              <div class="<%= i == 1 ? 'active item' : 'item'%>">
+                <% 4.times do |j| %>
+                  <li class="carousel-width">
+                    <div class="thumbnail">
+                      <a data-toggle="modal" href="#myModal_<%= @products[i+j].id %>" >
+                        <img src="http://dl.dropbox.com/u/14805214/<%= @products[i+j].name %>.jpg" height="195" width="260"  alt="product">
+                      </a>
+                      <div class="caption">
+                        <p style="font-size: 15px;color: #55A4F2;"><%= @products[i+j].name %><p>
+                        <p class="price_tag">₹ <%= @products[i+j].price %></p>
+                        <p class="content-desc">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                          ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                          dolore eu fugiat nulla pariatur.</p>
+                        <p style=" float: left; margin-right: 10px; ">
+                          <%= button_to 'Order', "/carts/insert-into-cart/?product_id=#{@products[i+j].id}", class: "order-button green-button ", :remote => true %>
+                          </p>
+                        </div>
+                      </div>
+                    </li>
+                  <% end %>
+                </div>
+              <% end %>
+            </div>
+            <!-- Carousel nav -->
+            <a class="carousel-control left" href="#myCarousel" data-slide="prev" style="left: -51px;">‹</a>
+            <a class="carousel-control right" href="#myCarousel" data-slide="next">›</a>
+          </div>
+        </div>
+      </div>
+  </div>
+  
+
+
   <script type="text/javascript">
      
     var maxHeight = 0;
